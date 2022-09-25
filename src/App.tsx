@@ -36,7 +36,7 @@ function App() {
         <Images />
       </ImageContext.Provider>
 
-      <HomePage/>
+      {/* <HomePage/> */}
     </div>
   )
 }
