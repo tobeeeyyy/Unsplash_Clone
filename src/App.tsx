@@ -1,6 +1,7 @@
 
 import { createContext, useState } from "react"
 import Heading from "./components/Heading"
+import Category from "./components/Heading/Category"
 import Images from "./components/Heading/Images"
 import SearchField from "./components/Heading/SearchField"
 import useAxios from "./components/hooks/useAxios"
@@ -33,6 +34,7 @@ function App() {
         <Heading>
           <SearchField />
         </Heading>
+        <Category />
         <Images />
       </ImageContext.Provider>
 
