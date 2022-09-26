@@ -35,6 +35,7 @@ function App() {
           <SearchField />
         </Heading>
         <Category />
+        <HomePage />
         <Images />
       </ImageContext.Provider>
 
