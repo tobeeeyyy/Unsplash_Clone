@@ -1,4 +1,3 @@
-
 import { createContext, useState } from "react"
 import Heading from "./components/Heading"
 import Category from "./components/Heading/Category"
@@ -16,9 +15,12 @@ export const ImageContext = createContext();
 function App() {
 
   const [searchImage, setSearchImage] = useState('');
+  const [showResult, setShowResult] = useState(false);
   const {response, isLoading, error, fetchData} = useAxios(`search/photos?page=1&query=cats&client_id=uCVztwhHCl6R2CaU9OxSedsnbFy0CUr-kc8OxofkWZw`)
   
   const value = {
+    showResult,
+    setShowResult,
     response,
     isLoading,
     error,
@@ -35,11 +37,13 @@ function App() {
           <SearchField />
         </Heading>
         <Category />
-        <HomePage />
-        <Images />
+        {showResult === true ? <Images /> : <HomePage />}
+        {/* <HomePage />
+        <Images /> */}
+        {/* <HomePage/> */}
       </ImageContext.Provider>
-
-      {/* <HomePage/> */}
+      
+      
     </div>
   )
 }
