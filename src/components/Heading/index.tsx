@@ -5,12 +5,21 @@ function Heading({children}){
   return (
     <div className='Header' >
         <div className='H1'>
-            Unsplash Clone
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="1.76em" 
+            height="2em" 
+            preserveAspectRatio="xMidYMid meet" 
+            viewBox="0 0 448 512">
+              <path 
+                fill="currentColor" 
+                d="M448 230.17V480H0V230.17h141.13v124.92h165.74V230.17ZM306.87 32H141.13v124.91h165.74Z"/>
+          </svg>
         </div>
 
         {children}
 
-        <button className='submit-button'>Submit a photo</button>
+        <button className='submit-button'>Submit Photo</button>
 
         <div className='items'>
             <div className="item">

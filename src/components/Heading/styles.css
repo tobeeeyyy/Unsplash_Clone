@@ -6,11 +6,10 @@
 }
 
 .H1{
-    font-size: large;
-    font-family: 'Oswald', sans-serif;
     margin-bottom: 1em;
     align-self: center;
     margin: 4px;
+    padding-right: 8px;
 }
 
 .search{
@@ -34,22 +33,32 @@
     margin: 1px;
 }
 
+.topSearchContainer{
+    display: flex;
+    flex-grow: 1;
+}
+
 .searchContainer{
     display: flex;
-    justify-content: start;
-    align-items: center;
     background-color: #eee;
-    border-radius: 18px;
-    padding: 6px 50px;
+    border-radius: 36px;
+    padding-left: 10px;
     flex-grow: 1;
+    padding-right: 10px;
+}
+
+.visualSearch{
+    justify-self: center;
+    align-self: center;
 }
 
 .submit-button{
     border-radius: 6px;
-    padding: 3.5px 8px;
+    padding: 5px 5px;
     font-size: medium;
     background-color: white;
-    margin: 4px;
+    margin: 10px;
+    margin-left: 25px;
     align-items: flex-start;
     flex-grow: 0;
     border-color: #eee;
@@ -60,17 +69,14 @@
 .images{
     display: grid;
     justify-items: center;
-    flex-grow: 0;
 }
 
 .image{
-    grid-gap: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 4rem auto;
-    justify-content: center;
-    align-items: start;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 40px;
+    width: 85%;
+    margin: auto;
+    columns: 3;
+    column-gap: 0px;
 }
 
 
@@ -88,6 +94,7 @@
     display: flex;
     align-items: center;
     grid-gap: 1rem;
+    padding: 0px 10px;
 }
 
 .item{
