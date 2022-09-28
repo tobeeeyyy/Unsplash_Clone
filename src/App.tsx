@@ -8,6 +8,7 @@ import useAxios from "./components/hooks/useAxios"
 
 import './global.css'
 import HomePage from './Page/HomePage'
+import Index from "./components/Title"
 
 //Create Context
 export const ImageContext = createContext();
@@ -37,7 +38,8 @@ function App() {
           <SearchField />
         </Heading>
         <Category />
-        {showResult === true ? <Images /> : <HomePage />}
+        <Index />
+        {/* {showResult === true ? <Images /> : <HomePage />} */}
         {/* <HomePage />
         <Images /> */}
         {/* <HomePage/> */}
