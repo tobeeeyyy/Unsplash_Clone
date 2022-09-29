@@ -61,6 +61,7 @@
     align-items: flex-start;
     flex-grow: 0;
     border: 0;
+    color: gray;
 }
 
 .submit-button{
@@ -74,8 +75,16 @@
     flex-grow: 0;
     border-color: #eee;
     box-shadow: 0 1px 1px #0000000a;
+    color: gray;
 }
 
+.close-button:hover{
+    color: black;
+}
+
+.submit-button:hover{
+    color: black;
+}
 
 .images{
     display: grid;
