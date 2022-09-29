@@ -19,6 +19,9 @@ function Heading({children}){
 
         {children}
 
+        <button className='close-button'>Advertise</button>
+        <button className='close-button'>Blog</button>
+
         <button className='submit-button'>Submit Photo</button>
 
         <div className='items'>

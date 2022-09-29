@@ -32,6 +32,7 @@ function HomePage() {
 
     return (
         <div>
+
             <InfiniteScroll
                 dataLength={images.length}
                 next={fetchImages}

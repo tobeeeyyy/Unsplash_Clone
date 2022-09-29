@@ -52,6 +52,17 @@
     align-self: center;
 }
 
+.close-button{
+    border-radius: 6px;
+    font-size: medium;
+    background-color: white;
+    margin: 10px;
+    margin-left: 25px;
+    align-items: flex-start;
+    flex-grow: 0;
+    border: 0;
+}
+
 .submit-button{
     border-radius: 6px;
     padding: 5px 5px;

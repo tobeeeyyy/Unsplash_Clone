@@ -9,6 +9,7 @@ import useAxios from "./components/hooks/useAxios"
 import './global.css'
 import HomePage from './Page/HomePage'
 import Index from "./components/Title"
+import Router from "./Routes"
 
 //Create Context
 export const ImageContext = createContext();
@@ -33,6 +34,8 @@ function App() {
   return (
     <div className="App">
       
+      {/* <Router /> */}
+      
       <ImageContext.Provider value={value}>
         <Heading>
           <SearchField />
@@ -44,6 +47,7 @@ function App() {
         <Images /> */}
         {/* <HomePage/> */}
       </ImageContext.Provider>
+      <HomePage />
       
       
     </div>
