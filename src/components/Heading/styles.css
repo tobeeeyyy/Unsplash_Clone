@@ -1,3 +1,9 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .Header{
     margin: 2rem 2rem 2rem;
     text-align: center;
@@ -124,6 +130,26 @@
     justify-content: space-between;
 }
 
+
+.drop-down{
+    list-style: none;
+    background: white;
+    width: 180px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.drop-down li a{
+    text-decoration: none;
+    color: gray;
+    text-align: start;
+}
+
+li:hover .drop-down{
+    opacity: 1;
+    visibility: visible;
+}
+
 .category-nav {
     display: flex;
     padding-left: 0.6rem;
@@ -136,6 +162,7 @@
 
 
   .category-nav .category {
+    text-decoration: none;
     display: list-item;
     list-style: none;
     margin: 3px;

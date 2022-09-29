@@ -10,6 +10,8 @@ import './global.css'
 import HomePage from './Page/HomePage'
 import Index from "./components/Title"
 import Router from "./Routes"
+import MegaMenu from "./components/DropDownMenu/MegaMenu"
+import DropMenu from "./components/DropDownMenu/DropMenu"
 
 //Create Context
 export const ImageContext = createContext();
@@ -36,18 +38,15 @@ function App() {
       
       {/* <Router /> */}
       
-      <ImageContext.Provider value={value}>
+      {/* <ImageContext.Provider value={value}>
         <Heading>
           <SearchField />
         </Heading>
         <Category />
         <Index />
-        {/* {showResult === true ? <Images /> : <HomePage />} */}
-        {/* <HomePage />
-        <Images /> */}
-        {/* <HomePage/> */}
       </ImageContext.Provider>
-      <HomePage />
+      <HomePage /> */}
+      <DropMenu />
       
       
     </div>
@@ -56,3 +55,7 @@ function App() {
 
 
 export default App
+
+
+// {/* {showResult === true ? <Images /> : <HomePage />} */}
+        
