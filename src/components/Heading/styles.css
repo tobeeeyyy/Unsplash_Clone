@@ -169,15 +169,16 @@ li:hover .drop-down{
   }
 
 
-  .category a {
-    
+  .category button {
     font-size: small;
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 1;
     text-decoration: none;
     color: gray;
-
+    background: none !important;
+    border: none;
+    cursor: pointer;
     padding: 6px;
     text-size-adjust: 100%;
     width: 100%;

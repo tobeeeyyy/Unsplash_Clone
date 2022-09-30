@@ -6,6 +6,9 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import UnsplashImage from '../components/UnsplashImages/UnsplashImage'
 import { RandomImagesType } from '../Models/randomImages'
 import generateRandomImagesService from '../Services/randomImages'
+import MainLayout from '../components/Layouts/MainLayout'
+import Index from '../components/Title'
+import Category from '../components/Heading/Category'
 
 function HomePage() {
 
@@ -32,7 +35,9 @@ function HomePage() {
 
     return (
         <div>
-
+            <MainLayout />
+            <Category />
+            <Index />
             <InfiniteScroll
                 dataLength={images.length}
                 next={fetchImages}
@@ -47,7 +52,7 @@ function HomePage() {
                 </div>
             </InfiniteScroll>
         </div>
-    )
+    );
 }
 
 export default HomePage

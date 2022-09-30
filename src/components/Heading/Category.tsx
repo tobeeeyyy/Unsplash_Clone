@@ -1,75 +1,83 @@
-import { useState } from "react";
 import "./styles.css";
+import { Link, Outlet } from "react-router-dom";
 
 function Category() {
-
-  const [name, setName] = useState('');
-
-  // const getImages = ({value) => {
-  //   setName(value);
-
-  // }
-  // onClick={getImages('Editorial')}
-
   return (
-    <div className="category-nav">
-      <div className="category">
-        <a href="#" >Editorial</a>
+    <>
+      <div className="category-nav">
+        <div className="category">
+          <Link to="/">
+            <button>Editorial</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/wallpapers">
+            <button className="active">Wallpapers</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/3d-renders">
+            <button className="active">3D Renders</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/health-and-wellness">
+            <button className="active">Health & Wellness</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/texture-and-patterns">
+            <button>Texture & Patterns</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/nature">
+            <button>Nature</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/current-events">
+            <button>Current Events</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/architecture">
+            <button>Architecture</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/business-and-work">
+            <button>Business & Work</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/film">
+            <button>Film</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/animals">
+            <button>Animals</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/fashion">
+            <button>Fashion</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/food-and-drink">
+            <button>Food & Drink</button>
+          </Link>
+        </div>
+        <div className="category">
+          <Link to="/t/spirituality">
+            <button>Spirituality</button>
+          </Link>
+        </div>
       </div>
-      <div className="category">
-        <a href="#" className="active">
-          Wallpapers
-        </a>
-      </div>
-      <div className="category">
-        <a href="#" className="active">
-          Travel
-        </a>
-      </div>
-      <div className="category">
-        <a href="#" className="active">
-          3D Renders
-        </a>
-      </div>
-      <div className="category">
-        <a href="#" className="active">
-          Health & Wellness
-        </a>
-      </div>
-      <div className="category">
-        <a href="#">Texture & Patterns</a>
-      </div>
-      <div className="category">
-        <a href="#">Nature</a>
-      </div>
-      <div className="category">
-        <a href="#">Current Events</a>
-      </div>
-      <div className="category">
-        <a href="#">Architecture</a>
-      </div>
-      <div className="category">
-        <a href="#">Business & Work</a>
-      </div>
-      <div className="category">
-        <a href="#">Film</a>
-      </div>
-      <div className="category">
-        <a href="#">Animals</a>
-      </div>
-      <div className="category">
-        <a href="#">Travel</a>
-      </div>
-      <div className="category">
-        <a href="#">Fashion</a>
-      </div>
-      <div className="category">
-        <a href="#">Food & Drink</a>
-      </div>
-      <div className="category">
-        <a href="#">Spirituality</a>
-      </div>
-    </div>
+      <Outlet />
+    </>
   );
 }
 
