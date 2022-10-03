@@ -4,6 +4,7 @@ import useAxios from "./components/hooks/useAxios";
 
 import "./global.css";
 import Blog from "./Page/Blog";
+import Taskbar from "./Page/Taskbar";
 import Router from "./Routes";
 
 //Create Context
@@ -27,7 +28,7 @@ function App() {
     setSearchImage,
   };
 
-  return <Blog />;
+  return <Router />;
 }
 
 export default App;
